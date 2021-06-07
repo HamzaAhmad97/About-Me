@@ -1,0 +1,18 @@
+{
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.useLocalIp": true,
+    "liveServer.settings.useWebExt": false,
+    "code-runner.runInTerminal": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 600,
+    "window.zoomLevel": -1,
+    "workbench.startupEditor": "none",
+    "editor.codeLensFontFamily": "Fira Code",
+    "workbench.colorTheme": "SynthWave '84",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "\"Fira Code\", Consolas, 'Courier New', monospace",
+    "liveServer.settings.ChromeDebuggingAttachment": false
+}
