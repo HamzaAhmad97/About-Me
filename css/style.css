@@ -2,7 +2,7 @@ p, h1, h2 {
     font-family: 'Ubuntu', sans-serif;
 }
 html {
-    background-image: url(/img/night.jpeg) ; 
+    background-image: url(https://images.unsplash.com/photo-1603411951734-23ae414fe112?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBhbW9sZWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80) ; 
     background-color: black;
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
