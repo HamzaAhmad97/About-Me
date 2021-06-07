@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>About Me</title>
 </head>
 <body>
     <header>
         <img src="/img/question-mark.jpg" alt="about me">
-        <p>Let's get to know me better.</p>
+        <p>Let's get to know me better</p>
+        <nav>
+            <a href="#bio">Bio</a>
+            <a href="https://github.com/HamzaAhmad97" target="_blank">GitHub</a>
+        </nav>
     </header>
-    <main>
-        <p></p>
-        <button></button>
-    </main>
-    <footer>
 
+    <main>
+        <p>Welcome!</p>
+        <p id="static">I prefer not to throw all of these pop-ups in your face, but instead, take your time, then click the button below to start.</p>
+        <button onclick="start()">Let's Go!</button>
+        <p id="pb">This is your score</p>
+        <p id="disc">The longer it is, the better you know me</p>
+        <div id="container">
+            <div id="progress">0</div>
+        </div>
+        
+
+        <section>
+            <h2 id="bio">About me</h2>
+            <p>I am Hamza Ahmad, I am 23 y/o, I studied mechanical engineering at JUST, I was among the best btw. My interest in coding and programming has seriously started during my 3rd year of my bachelor, I actually took many exceptions to take coursed related to AI and machine learning at different departments, and I really liked all of it. I am also so much into robotics, I actually published a cute paper with 2 of my colleagues under the supervision of two doctors about a hexapod, it was so much fun, especially since it got me studying linear algebra on my own from different books. I am yet to begin tho, I am so excited about the course I am taking now, and I hope to get to build something significant someday, I aim to have my own company, in order to do real engineering, however, I will do my best regardless. </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved &copy; 2021 Hamza Ahmad</p>
     </footer>
 
     <script src="js/app.js"></script>
