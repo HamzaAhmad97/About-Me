@@ -353,6 +353,11 @@ input {
     flex-direction: column;
     outline: none;
 }
+.last ul li{
+    
+    outline: red solid;
+    width: 10rem;
+}
 
 #finished {
     width: 25%;
