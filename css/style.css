@@ -1,8 +1,7 @@
-p, h1, h2 {
-    font-family: 'Ubuntu', sans-serif;
-}
+
+
 html {
-    background-image: url(/img/night.jpeg) ; 
+    background: black;
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
     background-position: center;
@@ -17,16 +16,53 @@ body {
 }
 header {
     /* position: relative; */
-    background: hsla(180, 100%, 25%, 0.734);
+    background: gray;
     display: flex;
-    flex-direction: row;
 
 }
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    /* outline: red 2px solid; */
+    margin-right: 1rem;
+}
+header nav a {
+    font-size: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: yellow;
+    font-family: 'Ubuntu', sans-serif;
+    /* outline: blue solid 1px; */
+    width: 20%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+header nav a:hover {
+    animation-name: bord;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes bord {
+    to {
+        border-bottom: black solid 2px;
+        color: black;
+    }
+}
+
 header img {
     width: 5rem;
     height: auto;
     border-radius: 50%;
     margin: 2rem;
+    display: block;
+    margin-right: auto;
 }
 header p {
     font-family: 'Ubuntu', sans-serif;
@@ -75,16 +111,17 @@ button {
     flex-direction: column;
     align-items:flex-start;
     justify-content: center;
+    width: 90%;
 
 }
 #progress {
-    background: green;
+    background: lightgreen;
     margin: auto 1rem ;
     width: 5%;
     /* animation-name: grow;
     animation-duration: 3s;
     animation-fill-mode: forwards; */
-    color: green;
+    color: lightgreen;
 }
 /* @keyframes grow {
     to {
@@ -92,7 +129,7 @@ button {
     }
 } */
 footer {
-    background: rgba(0, 128, 128, 0.734);
+    background: gray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,9 +151,8 @@ footer p {
 }
 #disc {
     font-size: 0.75rem;
-    margin: 0.5rem;
 }
-section {
+section, #t10 {
     outline: yellow solid 1px;
     display: flex;
     flex-direction: row;
@@ -135,6 +171,26 @@ section h2 {
     font-weight: bold;
     flex-shrink: 3;
 }
+#t10 li {
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+    /* flex-grow: 1; */
+    margin-right: 1.5rem;
+}
+#t10 h2 {
+    margin: 2rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    flex-shrink: 3;
+    padding-top: 1.5rem;
+
+}
+#t10 ol {
+    margin-right: 1.5rem;
+    margin-left: auto;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -143,7 +199,7 @@ nav {
     margin-left: 1rem;
     border-left: black;
 }
-nav a {
+/* nav a {
     margin: 1rem;
     text-decoration: none;
     text-align: center;
@@ -152,4 +208,166 @@ nav a {
 }
 nav a:hover {
     background:darkcyan;
+} */
+p, h1, h2, li {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+#top10 li{
+    list-style-type: upper-roman;
+    list-style-position: hanging;
+}
+#gg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#gg section div{
+    color: black;
+    /* outline: red solid 2px; */
+    text-align: center;
+    background: yellow;
+    margin: 0.25rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 2rem auto;
+    border-radius: 50%;
+}
+#gg section div:hover {
+    animation-name: blur;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes blur {
+    to {
+        transform: rotate(360deg);
+    }
+}
+#nums {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    outline: none;
+}
+#gg p {
+    margin: 2rem;
+    text-align: center;
+}
+#gg h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+#indicator {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+#yesno, #score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#yesno p, #score p {
+    text-align: center;
+}
+#seventh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#seventh p {
+    text-align: center;
+}
+#seventh #entrybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: darkgray;
+    outline: none;
+}
+input {
+    width: 30%;
+    height: 2rem;
+}
+#left {
+    text-align: center;
+    /* outline: blue solid; */
+    margin: 1rem 0;
+}
+#hints {
+    margin: 0.5rem;
+    font-size: 0.75rem;
+}
+#atsleft {
+    font-size: 1.5rem;
+}
+#container {
+    /* outline: red solid; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+#container div {
+    /* outline: blue solid; */
+    background:gray ;
+    color: gray;
+}
+#resetAll{
+    width: 7rem;
+    height: 4rem;
+    background: url(https://i.pinimg.com/originals/e3/ea/78/e3ea780936fa4fd667123bd663afe05e.gif);
+    color: yellow;
+}
+#resetAll:hover {
+    animation-name: redthing;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+@keyframes redthing {
+    to {
+        box-shadow: 10px 0px 7px red,
+        -10px 0px 7px red,
+        0px 10px 7px red,
+        0px -10px 7px red;
+    }
+}
+.last {
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+.last ul {
+    margin-left: 12rem;
+}
+#finished {
+    width: 25%;
+    animation-duration: 2s;
+    margin: auto;
+
+}
+
+#score p {
+    margin: 1rem 0;
+}
+#retake {
+    color: black;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+    to {
+        color: white;
+    }
 }

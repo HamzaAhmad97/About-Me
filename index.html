@@ -12,28 +12,113 @@
 </head>
 <body>
     <header>
-        <img src="/img/question-mark.jpg" alt="about me">
-        <p>Let's get to know me better</p>
+        <img src="/img/me.jpg" alt="about me">
         <nav>
             <a href="#bio">Bio</a>
-            <a href="https://github.com/HamzaAhmad97" target="_blank">GitHub</a>
+            <a href="#gg">Number Guessing</a>
+            <a href="#t10">Top 10</a>
+            <a href="#yesno">Yes/No</a>
+            <a href="#seventh">Best of 3</a>
         </nav>
     </header>
 
     <main>
-        <p>Welcome!</p>
-        <p id="static">I prefer not to throw all of these pop-ups in your face, but instead, take your time, then click the button below to start.</p>
-        <button onclick="start()">Let's Go!</button>
-        <p id="pb">This is your score</p>
-        <p id="disc">The longer it is, the better you know me</p>
-        <div id="container">
-            <div id="progress">0</div>
-        </div>
-        
 
-        <section>
+        <p>Welcome!</p>
+        <p id="static">I prefer not to throw all of these pop-ups in your face, but instead, take your time, navigate using the navigation bar above to move through quiz sections (3parts: 5qs, 1q, 1q)</p>
+        <!-- <hr>
+        <button id="resetAll" onclick="reloadAll()">Reset Everything</button>
+        <hr> -->
+        <section id="score">
+            <p id="pb">This is your score</p>
+            <p id="disc">The taller this bar, the better you know me</p>
+            <p id="finished">Please finish all sections first</p>
+            <button onclick="score()">Final Score</button>
+            <p id="retake" onclick="reloadAll()">Retake?</p>
+            <div id="container">
+                <div>.</div>
+                <div>.</div>
+                <div>.</div>
+                <div>.</div>
+                <div>.</div>
+                <div>.</div>
+                <div>.</div>
+            </div>
+        </section>
+
+    
+        <section id="yesno">
+            <p>This is the section about the five yes/no questions about me, click <strong>let's go</strong> to start</p>
+        <button onclick="start()">Let's Go!</button>
+        </section>
+        
+        <section id="seventh">
+            <p>In this section, you have a question with only one correct answer, you have 6 chances to solve it</p>
+            <p>Just type in the answer for the question, and hit <strong>check</strong></p>
+            <p id="question">Name at least one of 3 TV series I like the most</p>
+            <p id="hints"><strong>Hints:</strong> Peaky Blinders, BB, Stranger Things, DARK, Bab Alhara, Prison Break, Narcos</p>
+
+            <section id="entrybox">
+                <input type="text" id="entry" placeholder="type your answer">
+                <button onclick="check()">Check</button>
+                <p id="left">6 attempts left</p>
+            </section>
+        </section>
+        
+        
+        <section id="about">
             <h2 id="bio">About me</h2>
             <p>I am Hamza Ahmad, I am 23 y/o, I studied mechanical engineering at JUST, I was among the best btw. My interest in coding and programming has seriously started during my 3rd year of my bachelor, I actually took many exceptions to take coursed related to AI and machine learning at different departments, and I really liked all of it. I am also so much into robotics, I actually published a cute paper with 2 of my colleagues under the supervision of two doctors about a hexapod, it was so much fun, especially since it got me studying linear algebra on my own from different books. I am yet to begin tho, I am so excited about the course I am taking now, and I hope to get to build something significant someday, I aim to have my own company, in order to do real engineering, however, I will do my best regardless. </p>
+            <section class="last">
+                <h2>Work Experience</h2>
+            <ul>
+                <li>Markazia Toyota</li>
+                <li>Extensya</li>
+            </ul>
+
+            <h2>Education</h2>
+            <ul>
+                <li>Thu Alnourain primary school</li>
+                <li>Lu'Luat Tareq Secondary School </li>
+                <li>Jordan University of Science and Technology</li>
+            </ul>
+            </section>
+            
+        </section>
+
+        <section id="gg">
+            <h3>Number Guessing Game</h3>
+            <p>In this game, you are gonna pick a number randomely from below, you have exactly four opportunities to get the correct answer, but you will never walk alone, I will provide you with some hints. </p>
+            <p id="indicator">I am the hint line, watch me out</p>
+            <p id="atsleft">4 attempts left</p>
+            <section id="nums">
+                <div onclick="test(0)">0</div>
+                <div onclick="test(1)">1</div>
+                <div onclick="test(2)">2</div>
+                <div onclick="test(3)">3</div>
+                <div onclick="test(4)">4</div>
+                <div onclick="test(5)">5</div>
+                <div onclick="test(6)">6</div>
+                <div onclick="test(7)">7</div>
+                <div onclick="test(8)">8</div>
+                <div onclick="test(9)">9</div>
+            </section>
+        </section>
+
+        <section id="t10">
+            <h2>Top 10 books</h2>
+            <ol>
+                <li><strong>Because I love you </strong>- Guillaume Musso</li>
+                <li><strong>Thinking, Fast and Slow </strong>- Daniel Kahneman</li>
+                <li><strong>Head First Java </strong>- Bert Bates and Kathy Sierra</li>
+                <li><strong>Automate the Boring Stuff with Python </strong>- Al Sweigart</li>
+                <li><strong>Python Crash Course </strong>- Eric Matthes</li>
+                <li><strong>Learning Web Design </strong>- Jennifer Niederst Robbins</li>
+                <li><strong>Eloquent JavaScript </strong>- Marijn Haverbeke</li>
+                <li><strong>The Alchemist </strong>- Paulo Coelho</li>
+                <li><strong>Afterwards… </strong>- Guillaume Musso</li>
+                <li><strong>Robot dynamics and control </strong>- Mark W. Spong</li>
+            </ol>
         </section>
     </main>
 
