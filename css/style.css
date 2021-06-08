@@ -353,9 +353,7 @@ input {
     flex-direction: column;
     outline: none;
 }
-.last ul {
-    margin-left: 12rem;
-}
+
 #finished {
     width: 25%;
     animation-duration: 2s;
