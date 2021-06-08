@@ -355,7 +355,7 @@ input {
 }
 .last ul li{
     
-    outline: red solid;
+    /* outline: red solid; */
     width: 10rem;
 }
 
