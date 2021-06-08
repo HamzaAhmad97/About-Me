@@ -136,11 +136,12 @@ let entrybox = document.getElementById('entry');
 let entryContainer = document.getElementById('entrybox');
 let left = document.getElementById('left');
 let z = 6;
+let series = document.getElementById('series');
 function check(){
   z -= 1;
   left.innerHTML = `${z} attempts left`;
   if (z != 0) {
-    if (tv.indexOf((entrybox.value).toLowerCase()) != -1){
+    if (tv.indexOf((entrybox.value).toLowerCase()) != -1 && (entrybox.value == 'bb' ||entrybox.value == 'dark' || entrybox.value == 'stranger things')){
       left.innerHTML = `Correct! My most favorite TV series are \n ${tv[3]}, ${tv[1]} and ${tv[2]}`;
       entryContainer.style.background = 'green';
       done[2] = true;
@@ -153,6 +154,7 @@ function check(){
     left.innerHTML = `Sorry, the answer is \n ${tv[3]}, ${tv[1]} and ${tv[2]}`;
     entryContainer.style.background = 'red';
     done[2] = true;
+    series.setAttribute('onClick', null);
   }
   console.log(entrybox.value);
   done[2] = true;
