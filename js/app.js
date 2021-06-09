@@ -11,8 +11,13 @@ let button = document.getElementById('btn');
 let result = 0;
 
 function start(){
-  button.style.filter = 'blur(5px)';
+  button.style.background = 'black';
+  button.style.border = 'none';
+
   let name = prompt('Hi! Please enter your name');
+  if (name.length == 0) {
+    start();
+  }
   alert(`Welcome ${name}\nYou will now have 5 yes/no qustions, so stay sharp!`);
   welcome.innerHTML = `Welcome ${name}`;
   line.innerHTML = 'Let\'s hope that these questions will help us know each other better';
@@ -34,22 +39,22 @@ function start(){
       'respF': 'Sorry, incorrect. I love anime.'
     },
     '3': {
-      'question':'Can I and the whole humanity be equivalent in size to a small cube of suger?',
+      'question':'Am I from Irbid?',
       'answer': accepted[0],
-      'respT': 'Correct! only if we find a way to suck all the empty space inside the atoms making us.',
-      'respF': 'Sorry, incorrect. In fact we can only if we find a way to suck all the empty space inside the atoms making us.'
+      'respT': 'Correct! I am from Irbid',
+      'respF': 'Sorry, incorrect. I am from Irbid'
     },
     '4': {
-      'question':'Can I exist in different places at the same time?',
+      'question':'Am I 1.80m or taller?',
       'answer': accepted[0],
-      'respT': 'Correct! Theoritically you can.',
-      'respF': 'Sorry, incorrect. Theoritically you can, have a look at what superpositioning and the uncertainety principle are in addition to quantum tunneling.'
+      'respT': 'Correct! In fact I am 1.85m',
+      'respF': 'Sorry, incorrect. Actually I am 1.85m'
     },
     '5': {
-      'question':'Is my head getting a bit older faster than that of a person with an average height?',
+      'question':'Do I like cats?',
       'answer': accepted[0],
-      'respT': 'Correct! Gravity bends spacetime, and time passes slowly near massive objects like earth, so one inch can make a tiny difference.',
-      'respF': 'Sorry, incorrect. Gravity bends spacetime, and time passes slowly near massive objects like earth, so one inch can make a tiny difference.'
+      'respT': 'Correct! I love cats.',
+      'respF': 'Sorry, incorrect. I love cats.'
     },
   };
 
