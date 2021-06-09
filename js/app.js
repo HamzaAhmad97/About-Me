@@ -135,7 +135,7 @@ function third(){
       alert(`Incorrect, try again`);
       continue;
     } else {
-      alert('Correct!, I know some JS, Java and Python');
+      alert(`Correct!, I know some JS, Java and Python\nYour Overall score is ${result} out of 7\nBye!`);
       result++;
       return;
     }
