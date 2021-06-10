@@ -1,7 +1,7 @@
 'use strict';
 
 let result = 0;
-//start();
+start();
 
 function start(){
 
