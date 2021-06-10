@@ -1,27 +1,15 @@
-/* eslint-disable for-direction */
 'use strict';
 
-let scoreBars = document.querySelectorAll('#container div');
-let welcome = document.getElementById('welcome');
-let score = document.getElementById('strong');
-let line = document.getElementById('static');
-let button = document.getElementById('btn');
-
-
 let result = 0;
+//start();
 
 function start(){
-  button.style.background = 'black';
-  button.style.border = 'none';
 
   let name = prompt('Hi! Please enter your name');
   if (name.length == 0) {
     start();
   }
   alert(`Welcome ${name}\nYou will now have 5 yes/no qustions, so stay sharp!`);
-  welcome.innerHTML = `Welcome ${name}`;
-  line.innerHTML = 'Let\'s hope that these questions will help us know each other better';
-
   let accepted = [['yes', 'y'],['no', 'n']];
 
   let answers = {
@@ -60,10 +48,8 @@ function start(){
 
   alert('let\'s start!');
   for (let prop in answers) {
-    // console.log(prop);
     first(answers,prop,accepted);
   }
-  // console.log(result);
   alert('The first part is over, moving to the next one...');
   second();
   alert('The second part is over, moving to the last one...');
@@ -71,10 +57,8 @@ function start(){
 
 }
 
-///////////////////////////////////////////////////////////////////////////////
 function first(parent,q,acc){
   let ans = prompt(parent[q]['question']).toLocaleLowerCase();
-  // console.log(ans);
   while(acc[0].indexOf(ans) == -1 && acc[1].indexOf(ans) == -1) {
     ans = prompt('Invalid entry, please check.\n' +parent[q]['question']).toLocaleLowerCase();
   }
@@ -85,8 +69,8 @@ function first(parent,q,acc){
   } else {
     alert(parent[q]['respF']);
   }
+
 }
-///////////////////////////////////////////////////////////////////////////////
 function second(){
   let num = 7;
   for (let i = 4; i >= 1; i--){
@@ -118,7 +102,6 @@ function second(){
     }
   }
 }
-///////////////////////////////////////////////////////////////////////////////
 function third(){
   let arr = ['java', 'javascript', 'python'];
   for (let i = 6; i >= 1; i--){
@@ -132,7 +115,7 @@ function third(){
         alert(`Sorry, you did not get any of them right\nYour Overall score is ${result} out of 7\nBye!`);
         return;
       }
-      alert(`Incorrect, try again`);
+      alert('Incorrect, try again');
       continue;
     } else {
       alert(`Correct!, I know some JS, Java and Python\nYour Overall score is ${result} out of 7\nBye!`);

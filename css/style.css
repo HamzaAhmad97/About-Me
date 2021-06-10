@@ -1,10 +1,10 @@
 
 html, body {
-    background: black;
+    background: white;
     margin: 0;
 }
 header {
-    background: hsla(0, 0%, 50%, 0.515);
+    background: black;
     display: flex;
     height: 5rem;
 }
@@ -30,17 +30,8 @@ header nav a {
     justify-content: center;
     font-weight: bold;
 }
-header nav a:hover {
-    animation-name: bord;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-@keyframes bord {
-    to {
-        border-bottom: black solid 2px;
-        color: black;
-    }
-}
+
+
 header img {
     width: auto;
     height: auto;
@@ -62,39 +53,14 @@ main p {
     font-size: 1.5rem;
     margin: 2rem 0;
     text-align: center;
-    color: white;
+    color: black;
 }
 main * {
     margin: 1rem 0;
 }
-button {
-    width: 5rem;
-    height: 2.5rem;
-    font-family: 'Ubuntu', sans-serif;
-    border-radius: 10%;
-    background: yellow;
-    font-weight: bold;
-}
-#container {
-    background: darkgray;
-    height: 4rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: stretch;
-    width: 90%;
-    flex-direction: row;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-#container div {
-    background:hsla(0, 0%, 50%, 0.515) ;
-    color: hsla(0, 0%, 50%, 0.515);
-    width: 15%;
-}
+
 footer {
-    background: hsla(0, 0%, 50%, 0.515);
+    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +70,7 @@ footer {
 footer p {
     text-align: center;
     padding-top: 2rem;
+    color: white;
 }
 
 section, #t10 {
@@ -138,12 +105,11 @@ nav {
     justify-content: center;
     align-content: center;
     margin-left: 1rem;
-    border-left: black;
 }
 
 p, h1, h2, li {
     font-family: 'Ubuntu', sans-serif;
-    color: white;
+    color: black;
 }
 #t10 li{
     list-style-type: upper-roman;
@@ -164,7 +130,7 @@ p, h1, h2, li {
 }
 
 h1 {
-    background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+    background: linear-gradient(to bottom, #000000 22%,#ffee04 24%, #000000 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #fff;
@@ -172,144 +138,3 @@ font-family: 'Playfair Display', serif;
     position: relative;
 	text-transform: uppercase;	
 }
-
-
-/* #retake {
-    color: black;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes appear {
-    to {
-        color: white;
-    }
-} */
-/*
-#resetAll{
-    width: 7rem;
-    height: 4rem;
-    background: url(https://i.pinimg.com/originals/e3/ea/78/e3ea780936fa4fd667123bd663afe05e.gif);
-    color: yellow;
-}
-#resetAll:hover {
-    animation-name: redthing;
-    animation-duration: 0.25s;
-    animation-iteration-count: infinite;
-}
-@keyframes redthing {
-    to {
-        box-shadow: 10px 0px 7px red,
-        -10px 0px 7px red,
-        0px 10px 7px red,
-        0px -10px 7px red;
-    }
-} */
-/* .last {
-    display: flex;
-    flex-direction: column;
-    outline: none;
-}
-.last ul li{
-    width: 10rem;
-}
-
-#finished {
-    width: 25%;
-    animation-duration: 2s;
-    margin: auto;
-
-} */
-
-/* #progress {
-    background: lightgreen;
-    margin: auto 1rem ;
-    width: 5%;
-    /* animation-name: grow;
-    animation-duration: 3s;
-    animation-fill-mode: forwards; */
-
-/* @keyframes grow {
-    to {
-        width: 95%;
-    }
-} */
-/* #pb {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-}
-#disc {
-    font-size: 0.75rem;
-} */
-/* #t10 li {
-    font-size: 1rem;
-    line-height: 2rem;
-    text-align: justify;
-    /* flex-grow: 1; */
-
-/* #t10 h2 {
-    margin: 2rem 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-    flex-shrink: 3;
-    padding-top: 1.5rem;
-
-} */
-/* #t10 ol {
-    margin-right: 1.5rem;
-    margin-left: auto;
-} */
-/* nav a {
-    margin: 1rem;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
-    color: yellow;
-}
-nav a:hover {
-    background:darkcyan;
-} */
-/* #indicator {
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-} */
-/* #yesno, #score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#yesno p, #score p {
-    text-align: center;
-}
-#seventh {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#seventh p {
-    text-align: center;
-}
-#seventh #entrybox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    background: darkgray;
-    outline: none;
-}
-input {
-    width: 30%;
-    height: 2rem;
-}
-#left {
-    text-align: center;
-    /* outline: blue solid; */
-
-/* #hints {
-    margin: 0.5rem;
-    font-size: 0.75rem;
-} */
-/* #atsleft {
-    font-size: 1.5rem;
-} */
